@@ -1,0 +1,18 @@
+<div  ng-controller="productController">
+	<ul id="product">
+		<li ng-repeat="i in products">
+			<a href="#">
+				<img src="{{i.thisImg}}">
+				<div class="product-detail-1">
+					<h3>{{i.thisTitle}}</h3>
+					<strong style="color: red">{{i.price}}</strong>
+				</div>
+
+				<div class="product-buy-1">
+					<button type="button" class="button-buy">Mua Ngay</button>
+				</div>
+			</a>
+			<figure></figure>
+		</li>
+	</ul>	
+</div>

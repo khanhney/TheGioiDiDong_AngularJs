@@ -1,0 +1,17 @@
+<div>
+	<div id="top-Utility" ng-controller="top_utilityController">
+		<h2>PHỤ KIỆN GIÁ RẺ</h2>
+		<a href="#" ng-repeat="i in utilitys">{{i.thisInfo}}</a>
+	</div>
+
+	<ul id="item-Utility" ng-controller="item_utilityController">
+		<li ng-repeat="i in items">
+			<a href="#">
+				<img src="{{i.thisImg}}">
+				<h3>{{i.thisContent}}</h3>
+				<h3 style="color: red; margin-top: 15px;">{{i.thisPriceCurrent}}</h3>
+				<p style="text-decoration: line-through;">{{i.thisOldPrice}}</p>
+			</a>
+		</li>			
+	</ul>
+</div>
